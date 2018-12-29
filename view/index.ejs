@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Converge 2019</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <div id="fullpage">
+
+    <!--MAIN PARTICLE -->
+    <div class="section">
+        <div class="wrapper">
+                <div id="particles-js"></div>
+                        <div id="heading-logo">
+                            <!-- Add logo-->
+                          <h1>CONVERGE</h1>
+                          <h3 id="countdown"></h3>
+                        </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Main Content-->
+    <div class="section">
+            <div  id="landing-content" class=" container mt-5 mb-5" style="min-height:100%">
+                    <h2 class="col">Contents</h2>
+                    <p>Write something here</p>
+                    <!-- We can add a image gallery or something, have to make something for making this content full page-->
+                </div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.js"></script>
+        <script src="../public/js/countdown.js"></script>
+        <script src="../public/js/moment-countdown.js"></script>
+        <script src="../public/js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script> new fullpage('#fullpage', {
+
+            responsiveWidth: 700,
+
+            parallax: true,
+            onLeave: function(origin, destination, direction){
+                console.log("Leaving section" + origin.index);
+            },
+        });</script>
+         <script>
+                particlesJS.load('particles-js', '../public/js/particles.json',
+                function(){
+                    console.log('particles.json loaded...')
+                });
+                </script>
+
+</body>
+</html>
