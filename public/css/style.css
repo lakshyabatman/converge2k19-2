@@ -31,12 +31,12 @@ body{
 }
 
 #particles-js{
-    background-image: url('image1.jpg');
+    background-image: url('/image1.jpg');
     background-attachment: fixed;
     height: 100vh;
 }
 #particles2-js{
-    background-image: url('image1.jpg');
+    background-image: url('/image1.jpg');
     background-attachment: fixed;
     height: 100vh;
 }

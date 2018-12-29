@@ -1,13 +1,11 @@
 const route=require('express').Router();
-const body=require('body-parser');
-var url=body.urlencoded({ extended:false})
 const user=require('../schema/user.js')
 route.get('/',function(req,res){
   res.send('hello');
 })
 
 
-route.post('/usersignup',url,(req,res)=>{
+route.post('/usersignup',(req,res)=>{
   console.log(req.body)
  var use=new user()
 
