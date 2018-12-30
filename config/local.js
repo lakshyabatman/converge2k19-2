@@ -15,8 +15,8 @@ passport.use(new local({
   passwordField:'password',
   passReqToCallback:true
 },function(req,email,pass,done){
-  console.log(email)
   user.findOne({email:email}).then(function(da){
+
     if(!da)
     {
       return done(null,false,req.flash("login","No user found"))
@@ -26,10 +26,11 @@ passport.use(new local({
       return done(null,false,req.flash("login","Wrong password pal"))
     }
     else {
+      console.log(da)
       return done(null,da)
     }
     })
-  })
+
 }))
 exports.isAuth=function(req,res,next)
 {
