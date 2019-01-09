@@ -1,78 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Converge 2019</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-</head>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Converge 2K19</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Barlow:400,800" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/base_landscape.css" />
+		<link rel="stylesheet" type="text/css" href="/css/normalize_menu.css" />
+    	<link rel="stylesheet" type="text/css" href="/css/demo_menu.css" />
+    	<link rel="stylesheet" type="text/css" href="/css/icons_menu.css" />
+    	<link rel="stylesheet" type="text/css" href="/css/style5_menu.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="css/style_antigravity.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/fullpage_scrollmenu.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css1/examples_scrollmenu.css" />
+
+		<script src="/js/modernizr.custom_menu.js"></script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Playfair+Display:400,700" rel="stylesheet">
+		<link rel='stylesheet' href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+
+      	<link rel="stylesheet" href="/css/style_rocket.css">
+
+		<script>document.documentElement.className = 'js';</script>
+
+		<style type="text/css">
+			.embrace {
+			  padding: 0em 0em;
+			  font: normal 40px/50px Arial, sans-serif;
+			  color: #999;
+			}
+
+			.embrace b {
+			  float: left;
+			  text-align:center;
+			  overflow: hidden;
+			  position: relative;
+			  height: 50px;
+			}
+			.embrace span1 {
+			 display: inline-block;
+			color: #e42844;
+			font-weight:900%;
+			position: relative;
+			white-space: nowrap;
+			top: 0;
+			left: 0;
+			-webkit-animation: move 3s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-delay: 1s;
+			}
+
+			@keyframes move {
+			0%  { top: 0px; }
+			20% { top: -50px; }
+			40% { top: -100px; }
+			}
+			#sponsors
+			{
+				position: fixed;
+				perspective: 1000px;
+				border:2px solid white;
+				padding: 4px;
+				top: 83%;
+				font-size: 3em;
+			}
+			.meet-checksp{
+				position:absolute;
+				bottom:5%;
+				background:none;
+				border: 2px solid #1f1f1f;
+				width:auto;
+				padding:10px;
+				color:#1f1f1f;
+				font-weight:900;
+				font-family: 'Lato', sans-serif;
+				cursor:pointer;
+				margin-left:-138.21px;
+			}
+
+			SPEECH DOWN BUBBLE
+			.hvr-bubble-float-bottom {
+			  display: inline-block;
+			  vertical-align: middle;
+			  -webkit-transform: translateZ(0);
+			  transform: translateZ(0);
+			  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			  -webkit-backface-visibility: hidden;
+			  backface-visibility: hidden;
+			  -moz-osx-font-smoothing: grayscale;
+			  -webkit-transition-duration: 0.5s;
+			  transition-duration: 0.5s;
+			  -webkit-transition-property: transform;
+			  transition-property: transform;
+			}
+			.hvr-bubble-float-bottom:before {
+			  position: absolute;
+			  z-index: -1;
+			  content: '';
+			  left: calc(50% - 10px);
+			  bottom: 0;
+			  border-style: solid;
+			  border-width: 10px 10px 0 10px;
+			  border-color: #1f1f1f transparent transparent transparent;
+			  -webkit-transition-duration: 0.5s;
+			  transition-duration: 0.5s;
+			  -webkit-transition-property: transform;
+			  transition-property: transform;
+			  display:none;
+			}
+			.hvr-bubble-float-bottom:hover, .hvr-bubble-float-bottom:focus, .hvr-bubble-float-bottom:active {
+			  -webkit-transform: translateY(-10px);
+			  transform: translateY(-10px);
+			}
+			.hvr-bubble-float-bottom:hover:before, .hvr-bubble-float-bottom:focus:before, .hvr-bubble-float-bottom:active:before {
+			  -webkit-transform: translateY(10px);
+			  transform: translateY(10px);
+			  display:inline-block;
+			}
+
+			/*SPEECH DOWN BUBBLE ENDS*/
+
+
+			.check-our-events,.reach-us-hvr,.meet-us-hvr{
+				z-index:998;
+				position:absolute;
+				left:50%;
+				bottom:5%;
+				background:#1f1f1f;
+				border: 2px solid #e1e1e1;
+				width:auto;
+				padding:10px;
+				color:#e1e1e1;
+				font-weight:900;
+				font-family: 'Lato', sans-serif;
+				cursor:pointer;
+				margin-left:-102.5px;
+			}
+
+			.reach-us-hvr{
+				margin-left:-78px;
+			}
+
+			.meet-us-hvr{
+				margin-left:-99.5px;
+			}
+
+
+			.check-our-events:before,.reach-us-hvr:before,.meet-us-hvr:before,.highlights-hvr:before{
+				border-color: #e1e1e1 transparent transparent transparent;
+			}
+		</style>
+
+
+	</head>
 <body>
+	<nav id="bt-menu" class="bt-menu" style="z-index:1000;padding-top:3vh;">
+        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#">Reach Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://www.twitter.com/codrops" class="fa fa-facebook-official">Twitter</a></li>
+            <li><a href="https://plus.google.com/101095823814290637419" class="fa fa-instagram">Google+</a></li>
+            <li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="fa fa-twitter">Facebook</a></li>
+        </ul>
+    </nav>
+    <a href="#" class="shift" style="font-size:24px;position: fixed;top:25px;right:-10%;min-width:100px;float: left;color: #fff" id="login"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a>
     <div id="fullpage">
+		
+		<div class="section fp-auto-height" id="home">
 
-    <!--MAIN PARTICLE -->
-    <div class="section">
-        <div class="wrapper">
-                <div id="particles-js"></div>
-                        <div id="heading-logo">
-                            <!-- Add logo-->
-                          <h1>CONVERGE</h1>
-                          <h3 id="countdown"></h3>
+			<div class="content">
+				<!-- <p class="shift2">2&nbsp;&&nbsp;3&nbsp;February</p> -->
+				<canvas class="landscape"></canvas>
+				<script id="custom-vertex" type="x-shader/x-vertex">
+
+					//
+					// GLSL textureless classic 3D noise "cnoise",
+					// with an RSL-style periodic variant "pnoise".
+					// Author:  Stefan Gustavson (stefan.gustavson@liu.se)
+					// Version: 2011-10-11
+					//
+					// Many thanks to Ian McEwan of Ashima Arts for the
+					// ideas for permutation and gradient selection.
+					//
+					// Copyright (c) 2011 Stefan Gustavson. All rights reserved.
+					// Distributed under the MIT license. See LICENSE file.
+					// https://github.com/stegu/webgl-noise
+					//
+
+					vec3 mod289(vec3 x)
+					{
+						return x - floor(x * (1.0 / 289.0)) * 289.0;
+					}
+
+					vec4 mod289(vec4 x)
+					{
+						return x - floor(x * (1.0 / 289.0)) * 289.0;
+					}
+
+					vec4 permute(vec4 x)
+					{
+						return mod289(((x*34.0)+1.0)*x);
+					}
+
+					vec4 taylorInvSqrt(vec4 r)
+					{
+						return 1.79284291400159 - 0.85373472095314 * r;
+					}
+
+					vec3 fade(vec3 t) {
+						return t*t*t*(t*(t*6.0-15.0)+10.0);
+					}
+
+					// Classic Perlin noise
+					float cnoise(vec3 P)
+					{
+						vec3 Pi0 = floor(P); // Integer part for indexing
+						vec3 Pi1 = Pi0 + vec3(1.0); // Integer part + 1
+						Pi0 = mod289(Pi0);
+						Pi1 = mod289(Pi1);
+						vec3 Pf0 = fract(P); // Fractional part for interpolation
+						vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+						vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+						vec4 iy = vec4(Pi0.yy, Pi1.yy);
+						vec4 iz0 = Pi0.zzzz;
+						vec4 iz1 = Pi1.zzzz;
+
+						vec4 ixy = permute(permute(ix) + iy);
+						vec4 ixy0 = permute(ixy + iz0);
+						vec4 ixy1 = permute(ixy + iz1);
+
+						vec4 gx0 = ixy0 * (1.0 / 7.0);
+						vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+						gx0 = fract(gx0);
+						vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+						vec4 sz0 = step(gz0, vec4(0.0));
+						gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+						gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+
+						vec4 gx1 = ixy1 * (1.0 / 7.0);
+						vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+						gx1 = fract(gx1);
+						vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+						vec4 sz1 = step(gz1, vec4(0.0));
+						gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+						gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+
+						vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+						vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+						vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+						vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+						vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+						vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+						vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+						vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+
+						vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+						g000 *= norm0.x;
+						g010 *= norm0.y;
+						g100 *= norm0.z;
+						g110 *= norm0.w;
+						vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+						g001 *= norm1.x;
+						g011 *= norm1.y;
+						g101 *= norm1.z;
+						g111 *= norm1.w;
+
+						float n000 = dot(g000, Pf0);
+						float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+						float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+						float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+						float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+						float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+						float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+						float n111 = dot(g111, Pf1);
+
+						vec3 fade_xyz = fade(Pf0);
+						vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+						vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+						float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+						return 2.2 * n_xyz;
+					}
+
+					// Classic Perlin noise, periodic variant
+					float pnoise(vec3 P, vec3 rep)
+					{
+						vec3 Pi0 = mod(floor(P), rep); // Integer part, modulo period
+						vec3 Pi1 = mod(Pi0 + vec3(1.0), rep); // Integer part + 1, mod period
+						Pi0 = mod289(Pi0);
+						Pi1 = mod289(Pi1);
+						vec3 Pf0 = fract(P); // Fractional part for interpolation
+						vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
+						vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
+						vec4 iy = vec4(Pi0.yy, Pi1.yy);
+						vec4 iz0 = Pi0.zzzz;
+						vec4 iz1 = Pi1.zzzz;
+
+						vec4 ixy = permute(permute(ix) + iy);
+						vec4 ixy0 = permute(ixy + iz0);
+						vec4 ixy1 = permute(ixy + iz1);
+
+						vec4 gx0 = ixy0 * (1.0 / 7.0);
+						vec4 gy0 = fract(floor(gx0) * (1.0 / 7.0)) - 0.5;
+						gx0 = fract(gx0);
+						vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
+						vec4 sz0 = step(gz0, vec4(0.0));
+						gx0 -= sz0 * (step(0.0, gx0) - 0.5);
+						gy0 -= sz0 * (step(0.0, gy0) - 0.5);
+
+						vec4 gx1 = ixy1 * (1.0 / 7.0);
+						vec4 gy1 = fract(floor(gx1) * (1.0 / 7.0)) - 0.5;
+						gx1 = fract(gx1);
+						vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
+						vec4 sz1 = step(gz1, vec4(0.0));
+						gx1 -= sz1 * (step(0.0, gx1) - 0.5);
+						gy1 -= sz1 * (step(0.0, gy1) - 0.5);
+
+						vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
+						vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
+						vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
+						vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
+						vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
+						vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
+						vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
+						vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
+
+						vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
+						g000 *= norm0.x;
+						g010 *= norm0.y;
+						g100 *= norm0.z;
+						g110 *= norm0.w;
+						vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
+						g001 *= norm1.x;
+						g011 *= norm1.y;
+						g101 *= norm1.z;
+						g111 *= norm1.w;
+
+						float n000 = dot(g000, Pf0);
+						float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
+						float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
+						float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
+						float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
+						float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
+						float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
+						float n111 = dot(g111, Pf1);
+
+						vec3 fade_xyz = fade(Pf0);
+						vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
+						vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
+						float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x);
+						return 2.2 * n_xyz;
+					}
+
+					#define PI 3.1415926535897932384626433832795
+
+					uniform float time;
+					uniform float scroll;
+					uniform float maxHeight;
+					uniform float speed;
+					uniform float distortCenter;
+					uniform float roadWidth;
+					varying float vDisplace;
+
+					varying float fogDepth;
+
+					void main(){
+
+						float t = time * speed;
+						float wRoad = distortCenter;
+						float wRoad2 = wRoad * 0.5;
+
+						float angleCenter = uv.y * PI*4.0;
+						angleCenter += t * 0.9;
+
+						float centerOff = (
+							sin(angleCenter) +
+							sin(angleCenter*0.5)
+						) * wRoad;
+
+
+						vec3 noiseIn = vec3(uv, 1.0)*10.0;
+						float noise = cnoise(vec3(noiseIn.x, noiseIn.y + scroll, noiseIn.z));
+						noise += 1.0;
+						float h = noise;
+						float angle = (uv.x - centerOff) * PI;
+						float f = abs(cos(angle));
+						h *= pow(f, 1.5 + roadWidth);
+
+
+						vDisplace = h;
+
+
+						h*=maxHeight;
+
+						vec3 transformed = vec3( position.x, position.y, position.z + h );
+
+
+						vec4 mvPosition = modelViewMatrix * vec4( transformed, 1.0 );
+						gl_Position = projectionMatrix * mvPosition;
+
+						fogDepth = -mvPosition.z;
+
+					}
+
+				</script>
+				<script id="custom-fragment" type="x-shader/x-fragment">
+					uniform float time;
+					uniform vec3 color;
+					uniform sampler2D pallete;
+					varying float vDisplace;
+
+					uniform vec3 fogColor;
+					uniform float fogNear;
+					uniform float fogFar;
+					varying float fogDepth;
+
+					void main(){
+
+						vec2 stripPos = vec2( 0.0, vDisplace * (sin(time)*0.5+0.7) );
+						vec4 stripColor = texture2D( pallete, stripPos );
+						stripColor *= pow(1.0-vDisplace, 1.0);
+
+						gl_FragColor = stripColor;
+
+						#ifdef USE_FOG
+							float fogFactor = smoothstep( fogNear, fogFar, fogDepth );
+							gl_FragColor.rgb = mix( gl_FragColor.rgb, fogColor, fogFactor );
+						#endif
+					}
+				</script>
+
+				<img src="/img/logo.png" class="content__subtitle" style="position: relative;color: var(--color-subtitle);height: 40%;"></img>
+					<h1 class="content__title">CONVERGE '19</h1>
+					<div style="perspective: 1000px;font-size: 3.5vw;color: #C70039;margin-bottom: 2%"> 2nd & 3rd February </div>
+					<div class="embrace" style="position:fixed;top:75%">
+							<b>
+								  <span1>
+									EXPLORE<br /> 
+									EXPERIENCE<br />
+									EMBRACE
+									</span1>
+								</b>
                         </div>
+					<div id="sponsors">
+                    	Meet our Sponsors
+                    </div>
+			</div>
+			<div class="overlay"></div>
+		</div>
 
-        </div>
+		<div class="section" id="events">
+			<main class="main main--demo-5">
+			<div id='wrapper'>
+		    	<header id='header'></header>
+		    	<div class='clearfix' id='banner'>
+		      		<div class='wrap clearfix'>
+		        		<h1><span>EVENTS</span></h1>
+		        		<h2> Coming Soon..</h2>
+		      		</div>
+		    	</div>
+		    </div>
 
-    </div>
+			</main>
+			<script  src="/js/index_rocket.js"></script>
+		</div>
+		
+</div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+		<script src="/js/vendor/three.min.js"></script>
+		<script src="/js/vendor/Sky.js"></script>
+		<script src="/js/vendor/hammer.min.js"></script>
+		<script src="/js/vendor/charming.min.js"></script>
+		<script src="/js/vendor/TweenMax.min.js"></script>
+		<script src="/js/demo3.js"></script>
+		<script src="/js/classie_menu.js"></script>
+		<script src="/js/borderMenu_menu.js"></script>
+		
 
-    <!--Main Content-->
-    <div class="section">
-            <div  id="landing-content" class=" container mt-5 mb-5" style="min-height:100%">
-                    <h2>Contents</h2>
-                    <p>Write something here</p>
-                    <!-- We can add a image gallery or something, have to make something for making this content full page-->
-                </div>
+		<script type="text/javascript" src="/js/fullpage_scrollmenu.js"></script>
+		<script type="text/javascript" src="/js/examples_scrollmenu.js"></script>
+		<script type="text/javascript">
+		    var myFullpage = new fullpage('#fullpage', {
+		        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+		        css3: true
+		    });
+</script>
 
-    </div>
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.js"></script>
-        <script src="/js/countdown.js"></script>
-        <script src="/js/moment-countdown.js"></script>
-        <script src="/js/index.js"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script> new fullpage('#fullpage', {
-
-            responsiveWidth: 700,
-
-            parallax: true,
-            onLeave: function(origin, destination, direction){
-                console.log("Leaving section" + origin.index);
-            },
-        });</script>
-         <script>
-                particlesJS.load('particles-js', '/js/particles.json',
-                function(){
-                    console.log('particles.json loaded...')
-                });
-                </script>
-
-</body>
+	</body>
 </html>

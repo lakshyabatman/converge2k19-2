@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico');
+
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+#heading-logo{
+    font-family: 'Lobster', cursive;
+    color: #f9f3f4;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    line-height: 0.6em;
+}
+
+#heading-logo h1{
+    font-size:8rem;
+}
+@media screen and (max-width: 700px) {
+    #heading-logo h1{
+        font-size:4rem;
+        
+    }
+
+}
+@media screen and (max-width: 700px) {
+    #heading-logo h3{
+        font-size:4rem;
+        
+    }
+
+}
+@media screen and (max-width: 700px) {
+    #heading-logo{
+       top:7%;
+        
+    }
+
+}
+#heading-logo h3{
+    font-size: 60px;
+}
+
+#particles-js{
+    background-image: url('../image1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#landing-content{
+    border:2px solid transparent;
+    background-color: wheat;
+    border-radius: 10px;
+    text-align: center;
+}
+#landing-content p{
+    text-align: justify;
+}
+
+
+#c{
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+.highlight-content{
+    background-image: url('../highlight.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    padding-left: 5vw;
+}
+
+@media screen and (max-height: 800px){
+    .highlight-content{
+        height: 100%;
+    }
+
+}
+
+#highlight-heading{
+    position: relative;
+    top:30%; 
+    font-family: 'Pacifico', cursive;
+    font-size:100px;
+
+}
+.highlight-btn , #event-btn{
+    color: white;
+    position: relative;
+    top:35%;
+    left: 17px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+}
+
+.highlight-btn:hover,#event-btn:hover{
+    box-shadow: 3px 2px 10px wheat;
+}
+
+.team{
+    background-image: url('../team.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding-left: 5vw;
+}
+
+#team-heading{
+    position: relative;
+    top:30%; 
+    font-family: 'Pacifico', cursive;
+    font-size:100px;
+
+}
